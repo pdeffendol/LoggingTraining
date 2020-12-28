@@ -28,6 +28,7 @@ namespace LoggingTraining.Api.Controllers
         {
             _logger.LogInformation("Getting weather forecast");
             var rng = new Random();
+            _logger.LogInformation("Getting a random number: {random}", rng.Next());
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
