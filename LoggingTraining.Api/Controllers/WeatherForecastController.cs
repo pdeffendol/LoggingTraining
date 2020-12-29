@@ -23,7 +23,7 @@ namespace LoggingTraining.Api.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
+        [HttpGet(Name = "GetForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
             _logger.LogInformation("Getting weather forecast");

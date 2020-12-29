@@ -47,8 +47,9 @@ namespace LoggingTraining.Api
 
             app.UseHttpsRedirection();
 
-            app.UseSerilogRequestLogging();
-
+            app.UseSerilogRequestLogging(options
+                => options.EnrichDiagnosticContext = RequestLogEnricher.EnrichFromRequest);
+                
             app.UseRouting();
 
             app.UseAuthorization();
