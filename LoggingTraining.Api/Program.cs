@@ -21,6 +21,7 @@ namespace LoggingTraining.Api
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
                 .Enrich.FromLogContext()
                 .WriteTo.Console(new RenderedCompactJsonFormatter())
+                .WriteTo.Seq("http://localhost:5341")
                 .CreateLogger();
 
             try
