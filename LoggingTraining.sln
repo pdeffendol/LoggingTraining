@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingTest.Api", "LoggingTest.Api\LoggingTest.Api.csproj", "{83A20ABB-15CD-4310-96B9-DFE255DC1E12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingTraining.Api", "LoggingTraining.Api\LoggingTraining.Api.csproj", "{83A20ABB-15CD-4310-96B9-DFE255DC1E12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

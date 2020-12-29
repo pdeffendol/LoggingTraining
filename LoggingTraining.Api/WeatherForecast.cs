@@ -1,6 +1,6 @@
 using System;
 
-namespace LoggingTest.Api
+namespace LoggingTraining.Api
 {
     public class WeatherForecast
     {

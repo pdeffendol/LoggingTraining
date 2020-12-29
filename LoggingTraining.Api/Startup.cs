@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace LoggingTest.Api
+namespace LoggingTraining.Api
 {
     public class Startup
     {
@@ -30,7 +30,7 @@ namespace LoggingTest.Api
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "LoggingTest.Api", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "LoggingTraining.Api", Version = "v1" });
             });
         }
 
@@ -41,7 +41,7 @@ namespace LoggingTest.Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "LoggingTest.Api v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "LoggingTraining.Api v1"));
             }
 
             app.UseHttpsRedirection();
