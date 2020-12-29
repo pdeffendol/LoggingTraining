@@ -20,6 +20,9 @@ namespace LoggingTraining.Api
                 .MinimumLevel.Debug()
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
                 .Enrich.FromLogContext()
+                .Enrich.WithMachineName()
+                .Enrich.WithProperty("ApplicationName", "LoggingTraining")
+                .Enrich.WithProperty("Version", ReflectionUtils.GetAssemblyInformationalVersion<Program>())
                 .WriteTo.Console(new RenderedCompactJsonFormatter())
                 .WriteTo.Seq("http://localhost:5341")
                 .CreateLogger();
